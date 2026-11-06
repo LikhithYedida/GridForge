@@ -1,0 +1,9 @@
+gridforge:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: ../warehouse/gridforge.duckdb
+      threads: 4
+      settings:
+        TimeZone: UTC

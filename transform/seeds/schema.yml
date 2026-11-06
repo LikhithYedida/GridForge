@@ -1,0 +1,16 @@
+version: 2
+
+seeds:
+  - name: metros
+    description: >
+      The 66 metros used to weight weather by region. Population is the 2020 Census
+      metro-area population in millions, rounded; it is a weight, not a precise count.
+    columns:
+      - name: metro
+        data_tests: [unique, not_null]
+      - name: region_code
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: [CAL, CAR, CENT, FLA, MIDA, MIDW, NE, NY, NW, SE, SW, TEN, TEX]

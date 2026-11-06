@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: eia
+    description: Raw EIA-930 hourly data, loaded by ingest/build_warehouse.py
+    schema: raw
+    tables:
+      - name: region_data
+        description: One row per region, hour (UTC) and data type (D, DF, NG, TI)
+
+  - name: openmeteo
+    description: Hourly ERA5 reanalysis weather per metro, pulled by ingest/pull_weather.py
+    tables:
+      - name: weather_hourly
+        meta:
+          external_location: "read_parquet('../data/raw/weather/*.parquet')"

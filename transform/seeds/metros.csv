@@ -1,0 +1,67 @@
+region_code,metro,latitude,longitude,population_m
+CAL,Los Angeles,34.05,-118.24,13.2
+CAL,San Francisco,37.77,-122.42,4.7
+CAL,Riverside,33.95,-117.40,4.6
+CAL,San Diego,32.72,-117.16,3.3
+CAL,Sacramento,38.58,-121.49,2.4
+CAL,San Jose,37.34,-121.89,2.0
+CAL,Fresno,36.74,-119.79,1.0
+CAR,Charlotte,35.23,-80.84,2.7
+CAR,Raleigh,35.78,-78.64,1.4
+CAR,Greensboro,36.07,-79.79,0.8
+CAR,Columbia,34.00,-81.03,0.8
+CAR,Charleston,32.78,-79.93,0.8
+CENT,Kansas City,39.10,-94.58,2.2
+CENT,Oklahoma City,35.47,-97.52,1.4
+CENT,Omaha,41.26,-95.94,1.0
+CENT,Tulsa,36.15,-95.99,1.0
+CENT,Wichita,37.69,-97.34,0.6
+FLA,Miami,25.76,-80.19,6.1
+FLA,Tampa,27.95,-82.46,3.2
+FLA,Orlando,28.54,-81.38,2.7
+FLA,Jacksonville,30.33,-81.66,1.6
+MIDA,Chicago,41.88,-87.63,9.6
+MIDA,Washington DC,38.91,-77.04,6.4
+MIDA,Philadelphia,39.95,-75.17,6.2
+MIDA,Newark,40.74,-74.17,5.0
+MIDA,Baltimore,39.29,-76.61,2.8
+MIDA,Pittsburgh,40.44,-80.00,2.4
+MIDA,Columbus,39.96,-83.00,2.1
+MIDA,Richmond,37.54,-77.44,1.3
+MIDW,Detroit,42.33,-83.05,4.4
+MIDW,Minneapolis,44.98,-93.27,3.7
+MIDW,St. Louis,38.63,-90.20,2.8
+MIDW,Indianapolis,39.77,-86.16,2.1
+MIDW,Milwaukee,43.04,-87.91,1.6
+MIDW,New Orleans,29.95,-90.07,1.3
+MIDW,Louisville,38.25,-85.76,1.3
+NE,Boston,42.36,-71.06,4.9
+NE,Providence,41.82,-71.41,1.7
+NE,Hartford,41.76,-72.68,1.2
+NY,New York City,40.71,-74.01,12.0
+NY,Buffalo,42.89,-78.88,1.2
+NY,Rochester,43.16,-77.61,1.1
+NY,Albany,42.65,-73.76,0.9
+NW,Seattle,47.61,-122.33,4.0
+NW,Denver,39.74,-104.99,3.0
+NW,Portland,45.52,-122.68,2.5
+NW,Las Vegas,36.17,-115.14,2.3
+NW,Salt Lake City,40.76,-111.89,1.3
+NW,Boise,43.62,-116.21,0.8
+NW,Spokane,47.66,-117.43,0.6
+SE,Atlanta,33.75,-84.39,6.1
+SE,Birmingham,33.52,-86.80,1.1
+SE,Montgomery,32.37,-86.30,0.4
+SE,Savannah,32.08,-81.09,0.4
+SW,Phoenix,33.45,-112.07,4.8
+SW,Tucson,32.22,-110.97,1.0
+SW,Albuquerque,35.08,-106.65,0.9
+SW,El Paso,31.76,-106.49,0.9
+TEN,Nashville,36.16,-86.78,2.0
+TEN,Memphis,35.15,-90.05,1.3
+TEN,Knoxville,35.96,-83.92,0.9
+TEN,Chattanooga,35.05,-85.31,0.6
+TEX,Dallas,32.78,-96.80,7.6
+TEX,Houston,29.76,-95.37,7.1
+TEX,San Antonio,29.42,-98.49,2.6
+TEX,Austin,30.27,-97.74,2.3

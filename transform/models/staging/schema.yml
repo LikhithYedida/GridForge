@@ -1,0 +1,54 @@
+version: 2
+
+models:
+  - name: stg_region_data
+    description: EIA-930 pivoted to one row per region and UTC hour.
+    columns:
+      - name: region_code
+        data_tests: [not_null]
+      - name: period_utc
+        data_tests: [not_null]
+
+  - name: int_demand_flagged
+    description: Every region-hour on a complete hourly spine, with a quality flag on demand and EIA forecast.
+    columns:
+      - name: demand_flag
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: [ok, missing, non_positive, spike]
+      - name: forecast_flag
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: [ok, missing, non_positive, spike]
+
+  - name: fct_region_hour
+    description: >
+      Model-ready hourly demand per region. Bad or missing hours are repaired:
+      gaps of up to 4 hours by linear interpolation, longer gaps with the same hour one week earlier.
+    columns:
+      - name: region_code
+        data_tests: [not_null]
+      - name: period_utc
+        data_tests: [not_null]
+      - name: demand_model_mwh
+        description: Clean demand, repaired where needed. The forecasting target.
+      - name: temperature_f
+        description: Population-weighted temperature for the region, degrees Fahrenheit.
+      - name: impute_method
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: [none, interpolated, last_week, unrepaired]
+
+  - name: stg_weather
+    description: Hourly weather per metro in UTC, from the Open-Meteo archive.
+    columns:
+      - name: metro
+        data_tests: [not_null]
+      - name: period_utc
+        data_tests: [not_null]
+
+  - name: int_region_weather
+    description: Population-weighted temperature, dew point and solar radiation per region and hour, plus cooling and heating degree-hours (base 65 F).

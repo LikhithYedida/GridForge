@@ -1,0 +1,6 @@
+.venv/
+.env
+data/
+warehouse/*.duckdb
+transform/target/
+transform/logs/
